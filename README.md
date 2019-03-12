@@ -26,3 +26,12 @@ Database was created on AWS and then queried remotely using SQL Workbench. The s
 
 ### Joined Metric Table
 1. Union two tables that result in the [data set](supplier_score_metrics.csv)
+
+
+## Explanation of Methods
+
+### Acceptance Ratio
+For the acceptance ratio I wanted to create a calculation that measured what percentage of submitted orders were ever accepted. That's why I ignored the accepted date and used only the processing. Otherwise many suppliers had over 100% because previous day orders were not accepted till later. In batch processing you want to account for retroactive fullfilment. 
+
+### Average Rating
+I decided to take the most recent timestamp entry for each order for each day. This eliminated the need to process several order reviews that happened in a  
