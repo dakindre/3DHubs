@@ -6,7 +6,7 @@ AWS PostgreSQL
 SQL Workbench
 ```
 ## Overview
-Database was created on AWS and then queried remotely using SQL Workbench. The script used to produce the final results can be found [here](3d_script.sql). An overview of the process is listed below
+Database was created on AWS and then queried remotely using SQL Workbench. The script used to produce the final results can be found [here](3d_script.sql). The results csv can be found [here](supplier_score_metrics.csv). An overview of the process is listed below
 
 
 ### Acceptance Ratio Calculation
